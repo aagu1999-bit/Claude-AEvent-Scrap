@@ -66,10 +66,14 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0 --server.headless true"
+args = "streamlit run dashboard.py --server.port 5000 --server.address 0.0.0.0 --server.headless true"
 
 [workflows.workflow.metadata]
 outputType = "console"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
 
 [userenv]
 
