@@ -60,6 +60,17 @@ args = "python reprocess_weekends.py --confirm"
 [workflows.workflow.metadata]
 outputType = "console"
 
+[[workflows.workflow]]
+name = "Dashboard"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0 --server.headless true"
+
+[workflows.workflow.metadata]
+outputType = "console"
+
 [userenv]
 
 [userenv.shared]

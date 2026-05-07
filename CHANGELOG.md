@@ -3,6 +3,18 @@
 Notable changes to the Instagram event extraction pipeline. Newest first.
 Each entry is dated and links to a decision record where the *why* is non-obvious.
 
+## 2026-05-07 (latest)
+
+### Added
+- **Streamlit dashboard** (`dashboard.py`) — three pages: Health (last run
+  metrics, anomaly reasons, per-account outcomes), Events (filterable
+  browser of latest extraction snapshot), and Review (batched
+  promote/block/typo actions writing back to the Sheet). Run with
+  `streamlit run dashboard.py` or via the new "Dashboard" Replit
+  workflow. See [docs/decisions/0004-streamlit-dashboard.md](docs/decisions/0004-streamlit-dashboard.md).
+- New `streamlit>=1.40.0` dependency.
+- New "Dashboard" workflow entry in `.replit`.
+
 ## 2026-05-07 (later)
 
 ### Added
